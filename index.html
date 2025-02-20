@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memotest</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (para iconos) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-white">
+    <div class="container text-center">
+        <!-- Título -->
+        <h1 class="mt-4 display-4">Memotest</h1>
+
+        <!-- Información del juego -->
+        <div class="info mb-4">
+            <p class="lead">
+                El Memotest es un juego de memoria en el que debes encontrar pares de cartas iguales.
+                Cada jugador se turna para voltear dos cartas. Si coinciden, el jugador gana un punto.
+                ¡El jugador con más aciertos al final gana!
+            </p>
+            <p class="lead">
+                <strong>Instrucciones:</strong>
+                Haz clic en una carta para voltearla. Luego, haz clic en otra para intentar encontrar su par.
+                ¡Buena suerte!
+            </p>
+        </div>
+
+        <!-- Tablero de juego -->
+        <div id="game-board" class="board"></div>
+
+        <!-- Información del juego (aciertos y turno) -->
+        <div class="info mt-4">
+            <p class="h5">Aciertos:</p>
+            <p id="player1-score" class="h6">Jugador 1: 0</p>
+            <p id="player2-score" class="h6">Jugador 2: 0</p>
+            <p id="status" class="h5">Turno del Jugador 1</p>
+            <button id="reset-button" class="btn btn-light hidden">Reiniciar</button>
+        </div>
+
+        <!-- Sección de lenguajes utilizados -->
+        <div class="mt-5">
+            <h2 class="mb-4">Tecnologías utilizadas</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <i class="fab fa-html5 fa-3x text-danger"></i>
+                    <p class="mt-2">HTML</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <i class="fab fa-css3-alt fa-3x text-primary"></i>
+                    <p class="mt-2">CSS</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <i class="fab fa-js-square fa-3x text-warning"></i>
+                    <p class="mt-2">JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (opcional, si necesitas funcionalidades de Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

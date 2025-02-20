@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #fff; /* Título blanco */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #333; /* Fondo gris oscuro */
+    border: 2px solid #fff; /* Borde blanco */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff; /* Texto blanco */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card.flipped {
+    background-color: #555; /* Fondo gris claro al voltear */
+    cursor: default;
+    transform: scale(1.1); /* Efecto de escala al voltear */
+}
+
+.info {
+    margin-top: 20px;
+}
+
+#status {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff; /* Texto blanco */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd; /* Efecto hover en el botón */
+}
+
+button.hidden {
+    display: none;
+}
